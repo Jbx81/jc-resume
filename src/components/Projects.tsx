@@ -1,121 +1,176 @@
 import React from 'react';
-import { ExternalLink, Github, Zap } from 'lucide-react';
+import { ExternalLink, Github, Zap, Star, Users, TrendingUp } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with real-time inventory management, payment processing, and admin dashboard. Built for a client with 10,000+ products.",
-      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "AWS"],
+      title: "Design System & Component Library",
+      description: "Comprehensive React component library with TypeScript, Storybook documentation, and automated testing. Used across 15+ products with 50+ components.",
+      image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+      technologies: ["React", "TypeScript", "Storybook", "Rollup", "Jest", "Chromatic"],
+      metrics: ["15+ Products", "50+ Components", "99% Test Coverage"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: true
+      featured: true,
+      category: "Architecture"
     },
     {
-      title: "Project Management Tool",
-      description: "Collaborative project management application with real-time updates, task tracking, and team communication features. Used by 500+ active users.",
-      image: "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop",
-      technologies: ["Vue.js", "Express.js", "MongoDB", "Socket.io", "Docker"],
+      title: "Real-time Trading Dashboard",
+      description: "High-performance financial dashboard with WebSocket connections, real-time charts, and complex data visualizations. Handles 10k+ updates per second.",
+      image: "https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+      technologies: ["React", "D3.js", "WebSocket", "Redux Toolkit", "Canvas API", "Web Workers"],
+      metrics: ["10k+ Updates/sec", "Sub-100ms Latency", "1M+ Users"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: true
+      featured: true,
+      category: "Performance"
     },
     {
-      title: "AI Content Generator",
-      description: "Machine learning-powered content generation tool that helps marketers create engaging copy. Integrated with OpenAI API for intelligent text generation.",
-      image: "https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop",
-      technologies: ["Python", "FastAPI", "React", "OpenAI API", "Redis"],
+      title: "E-commerce Progressive Web App",
+      description: "Mobile-first PWA with offline capabilities, push notifications, and optimized checkout flow. Achieved 95+ Lighthouse scores across all metrics.",
+      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+      technologies: ["Next.js", "PWA", "Service Workers", "Stripe", "Tailwind CSS", "Framer Motion"],
+      metrics: ["95+ Lighthouse", "40% Mobile Conversion", "Offline Support"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: true
+      featured: true,
+      category: "PWA"
     },
     {
-      title: "Analytics Dashboard",
-      description: "Real-time analytics dashboard for tracking user engagement and business metrics. Features interactive charts and custom reporting.",
-      image: "https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop",
-      technologies: ["React", "D3.js", "Node.js", "PostgreSQL", "Chart.js"],
+      title: "Interactive Data Visualization Platform",
+      description: "Complex data visualization tool with custom D3.js charts, real-time filtering, and export capabilities for business intelligence.",
+      image: "https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+      technologies: ["React", "D3.js", "TypeScript", "Canvas", "WebGL", "Node.js"],
+      metrics: ["Custom Visualizations", "Real-time Filtering", "Export Features"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: false
+      featured: false,
+      category: "Visualization"
     },
     {
-      title: "Mobile Fitness App",
-      description: "React Native fitness tracking application with workout plans, progress tracking, and social features. Published on both iOS and Android stores.",
-      image: "https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop",
-      technologies: ["React Native", "Firebase", "Redux", "Stripe", "Push Notifications"],
+      title: "Collaborative Code Editor",
+      description: "Real-time collaborative code editor with syntax highlighting, live cursors, and integrated chat. Built with operational transforms.",
+      image: "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+      technologies: ["React", "Monaco Editor", "WebSocket", "Operational Transform", "Node.js"],
+      metrics: ["Real-time Collaboration", "Multi-language Support", "Live Cursors"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: false
+      featured: false,
+      category: "Collaboration"
     },
     {
-      title: "Cryptocurrency Tracker",
-      description: "Real-time cryptocurrency portfolio tracker with price alerts, market analysis, and trading recommendations. Handles 1M+ API calls daily.",
-      image: "https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&fit=crop",
-      technologies: ["Vue.js", "Node.js", "WebSocket", "CoinGecko API", "Chart.js"],
+      title: "Accessibility-First Admin Panel",
+      description: "Fully accessible admin interface following WCAG 2.1 AA standards with screen reader support and keyboard navigation.",
+      image: "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+      technologies: ["React", "ARIA", "Focus Management", "Screen Reader Testing", "Axe-core"],
+      metrics: ["WCAG 2.1 AA", "100% Keyboard Nav", "Screen Reader Optimized"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: false
+      featured: false,
+      category: "Accessibility"
     }
   ];
 
   const featuredProjects = projects.filter(project => project.featured);
   const otherProjects = projects.filter(project => !project.featured);
 
+  const getCategoryIcon = (category: string) => {
+    switch (category) {
+      case 'Architecture': return <Star className="w-4 h-4" />;
+      case 'Performance': return <Zap className="w-4 h-4" />;
+      case 'PWA': return <TrendingUp className="w-4 h-4" />;
+      default: return <Users className="w-4 h-4" />;
+    }
+  };
+
+  const getCategoryColor = (category: string) => {
+    switch (category) {
+      case 'Architecture': return 'from-purple-500 to-indigo-500';
+      case 'Performance': return 'from-yellow-500 to-orange-500';
+      case 'PWA': return 'from-green-500 to-emerald-500';
+      default: return 'from-blue-500 to-cyan-500';
+    }
+  };
+
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
+    <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center space-x-2 bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <Star className="w-4 h-4" />
+            <span>Portfolio</span>
+          </div>
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Featured Projects</h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-600 mx-auto mb-8"></div>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Showcasing frontend engineering excellence through performance-focused, 
+            accessible, and scalable web applications.
+          </p>
         </div>
         
         {/* Featured Projects */}
-        <div className="space-y-12 mb-16">
+        <div className="space-y-16 mb-20">
           {featuredProjects.map((project, index) => (
-            <div key={index} className={`flex flex-col ${index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-8 lg:gap-12`}>
+            <div key={index} className={`flex flex-col ${index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12`}>
               <div className="lg:w-1/2">
-                <div className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div className="relative group overflow-hidden rounded-2xl shadow-2xl">
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-64 lg:h-80 object-cover hover:scale-105 transition-transform duration-500"
+                    className="w-full h-80 lg:h-96 object-cover group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute top-4 left-4">
-                    <div className="flex items-center space-x-1 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                      <Zap className="w-4 h-4" />
-                      <span>Featured</span>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute top-6 left-6">
+                    <div className={`flex items-center space-x-2 bg-gradient-to-r ${getCategoryColor(project.category)} text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg`}>
+                      {getCategoryIcon(project.category)}
+                      <span>{project.category}</span>
                     </div>
                   </div>
                 </div>
               </div>
               
-              <div className="lg:w-1/2 space-y-6">
-                <h3 className="text-3xl font-bold text-gray-900">{project.title}</h3>
-                <p className="text-lg text-gray-700 leading-relaxed">{project.description}</p>
+              <div className="lg:w-1/2 space-y-8">
+                <div>
+                  <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">{project.title}</h3>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">{project.description}</p>
+                </div>
                 
-                <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech, idx) => (
-                    <span key={idx} className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
-                      {tech}
-                    </span>
+                {/* Metrics */}
+                <div className="grid grid-cols-3 gap-4">
+                  {project.metrics.map((metric, idx) => (
+                    <div key={idx} className="text-center p-4 bg-white rounded-xl shadow-md border border-gray-100">
+                      <div className="text-sm font-semibold text-gray-900">{metric}</div>
+                    </div>
                   ))}
                 </div>
                 
+                {/* Technologies */}
+                <div className="space-y-3">
+                  <h4 className="text-lg font-semibold text-gray-900">Technologies Used</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech, idx) => (
+                      <span key={idx} className="px-4 py-2 bg-gradient-to-r from-gray-100 to-gray-200 text-gray-800 rounded-full text-sm font-medium hover:from-gray-200 hover:to-gray-300 transition-colors">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                
+                {/* Action Buttons */}
                 <div className="flex space-x-4">
                   <a 
                     href={project.liveUrl} 
-                    className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors"
+                    className="flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-8 py-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl font-semibold"
                   >
-                    <ExternalLink className="w-4 h-4" />
+                    <ExternalLink className="w-5 h-5" />
                     <span>Live Demo</span>
                   </a>
                   <a 
                     href={project.githubUrl}
-                    className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-900 text-white px-6 py-3 rounded-lg transition-colors"
+                    className="flex items-center space-x-2 bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-xl transition-colors shadow-lg hover:shadow-xl font-semibold"
                   >
-                    <Github className="w-4 h-4" />
-                    <span>Code</span>
+                    <Github className="w-5 h-5" />
+                    <span>Source Code</span>
                   </a>
                 </div>
               </div>
@@ -125,25 +180,41 @@ const Projects = () => {
         
         {/* Other Projects */}
         <div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Other Notable Projects</h3>
+          <h3 className="text-3xl font-bold text-gray-900 mb-12 text-center">Additional Projects</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {otherProjects.map((project, index) => (
-              <div key={index} className="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-                <div className="relative">
+              <div key={index} className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
+                <div className="relative overflow-hidden">
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
+                  <div className="absolute top-4 left-4">
+                    <div className={`flex items-center space-x-1 bg-gradient-to-r ${getCategoryColor(project.category)} text-white px-3 py-1 rounded-full text-xs font-medium`}>
+                      {getCategoryIcon(project.category)}
+                      <span>{project.category}</span>
+                    </div>
+                  </div>
                 </div>
                 
                 <div className="p-6 space-y-4">
-                  <h4 className="text-xl font-bold text-gray-900">{project.title}</h4>
-                  <p className="text-gray-700">{project.description}</p>
+                  <h4 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">{project.title}</h4>
+                  <p className="text-gray-700 text-sm leading-relaxed">{project.description}</p>
                   
+                  {/* Metrics */}
+                  <div className="flex flex-wrap gap-2">
+                    {project.metrics.slice(0, 2).map((metric, idx) => (
+                      <span key={idx} className="px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs font-medium">
+                        {metric}
+                      </span>
+                    ))}
+                  </div>
+                  
+                  {/* Technologies */}
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.slice(0, 3).map((tech, idx) => (
-                      <span key={idx} className="px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs font-medium">
+                      <span key={idx} className="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs font-medium">
                         {tech}
                       </span>
                     ))}
@@ -154,17 +225,18 @@ const Projects = () => {
                     )}
                   </div>
                   
-                  <div className="flex space-x-3">
+                  {/* Action Links */}
+                  <div className="flex justify-between items-center pt-4 border-t border-gray-100">
                     <a 
                       href={project.liveUrl}
-                      className="flex items-center space-x-1 text-blue-600 hover:text-blue-700 font-medium"
+                      className="flex items-center space-x-1 text-blue-600 hover:text-blue-700 font-medium text-sm transition-colors"
                     >
                       <ExternalLink className="w-4 h-4" />
-                      <span>Live</span>
+                      <span>Live Demo</span>
                     </a>
                     <a 
                       href={project.githubUrl}
-                      className="flex items-center space-x-1 text-gray-700 hover:text-gray-900 font-medium"
+                      className="flex items-center space-x-1 text-gray-700 hover:text-gray-900 font-medium text-sm transition-colors"
                     >
                       <Github className="w-4 h-4" />
                       <span>Code</span>
