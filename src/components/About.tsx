@@ -1,31 +1,31 @@
 import React from 'react';
-import { Zap, Users, Award, Target, Layers, Sparkles } from 'lucide-react';
+import { Zap, Users, Award, Target, Layers, Sparkles, Palette, Code2 } from 'lucide-react';
 
 const About = () => {
   const highlights = [
     {
-      icon: Zap,
-      title: "Performance Expert",
-      description: "Optimized applications serving 2M+ users with 95% Lighthouse scores and sub-second load times",
-      color: "from-yellow-400 to-orange-500"
-    },
-    {
-      icon: Layers,
-      title: "Architecture Design",
-      description: "Built scalable component libraries and design systems used across 15+ products",
+      icon: Code2,
+      title: "Frontend Engineering",
+      description: "6 years building scalable React applications with TypeScript, serving millions of users",
       color: "from-blue-400 to-cyan-500"
     },
     {
-      icon: Users,
-      title: "Team Collaboration",
-      description: "Led frontend initiatives across cross-functional teams of designers and backend engineers",
+      icon: Palette,
+      title: "Design Background",
+      description: "12 years in graphic design and magazine production, bringing visual expertise to development",
       color: "from-purple-400 to-pink-500"
     },
     {
-      icon: Target,
-      title: "User-Centric Focus",
-      description: "Increased user engagement by 65% through intuitive interfaces and accessibility improvements",
-      color: "from-green-400 to-emerald-500"
+      icon: Layers,
+      title: "Design Systems",
+      description: "Architect component libraries that bridge design and development teams seamlessly",
+      color: "from-emerald-400 to-teal-500"
+    },
+    {
+      icon: Zap,
+      title: "Performance Focus",
+      description: "Optimize applications for 95+ Lighthouse scores while maintaining design fidelity",
+      color: "from-yellow-400 to-orange-500"
     }
   ];
 
@@ -38,7 +38,7 @@ const About = () => {
             <span>About Me</span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Frontend Engineering Excellence
+            Where Design Meets Engineering
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto"></div>
         </div>
@@ -61,10 +61,15 @@ const About = () => {
                       <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
                       <span className="text-gray-600 font-medium">Available for opportunities</span>
                     </div>
-                    <div className="flex justify-center space-x-4 text-sm text-gray-500">
-                      <span>6+ Years Experience</span>
-                      <span>•</span>
-                      <span>50+ Projects</span>
+                    <div className="grid grid-cols-2 gap-4 text-sm text-gray-500 mt-4">
+                      <div className="text-center p-3 bg-blue-50 rounded-lg">
+                        <div className="font-bold text-blue-600 text-lg">6+</div>
+                        <div>Years Engineering</div>
+                      </div>
+                      <div className="text-center p-3 bg-purple-50 rounded-lg">
+                        <div className="font-bold text-purple-600 text-lg">12+</div>
+                        <div>Years Design</div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -75,27 +80,31 @@ const About = () => {
           <div className="space-y-8">
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                I'm a passionate frontend engineer who believes great user experiences are built through 
-                the perfect blend of <span className="font-semibold text-indigo-600">technical excellence</span> and 
-                <span className="font-semibold text-purple-600"> design thinking</span>.
+                I bring a unique perspective to frontend engineering, combining 
+                <span className="font-semibold text-indigo-600"> 6 years of software development</span> with 
+                <span className="font-semibold text-purple-600"> 12 years of graphic design expertise</span> 
+                from magazine print production.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                With 6+ years specializing in React ecosystems, I've architected and delivered 
-                high-performance web applications that serve millions of users. My expertise spans 
-                from micro-interactions to large-scale application architecture.
+                My design background gives me an intuitive understanding of typography, layout, color theory, 
+                and user experience principles. This foundation allows me to build applications that are not 
+                only technically excellent but also visually compelling and user-friendly.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                I'm particularly passionate about performance optimization, accessibility, and creating 
-                component libraries that empower entire engineering teams to build consistently excellent products.
+                I specialize in translating complex design systems into scalable React components, 
+                ensuring pixel-perfect implementation while maintaining optimal performance and accessibility standards.
               </p>
             </div>
             
-            <div className="flex flex-wrap gap-3">
-              {['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Framer Motion', 'Webpack'].map((tech) => (
-                <span key={tech} className="px-4 py-2 bg-gradient-to-r from-indigo-50 to-purple-50 text-indigo-700 rounded-full text-sm font-medium border border-indigo-200">
-                  {tech}
-                </span>
-              ))}
+            <div className="space-y-4">
+              <h3 className="text-lg font-semibold text-gray-900">Core Expertise</h3>
+              <div className="flex flex-wrap gap-3">
+                {['React/TypeScript', 'Design Systems', 'CSS/Sass', 'Figma to Code', 'Performance Optimization', 'Accessibility'].map((tech) => (
+                  <span key={tech} className="px-4 py-2 bg-gradient-to-r from-indigo-50 to-purple-50 text-indigo-700 rounded-full text-sm font-medium border border-indigo-200">
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>

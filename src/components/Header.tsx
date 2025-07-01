@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Linkedin, Github, Download, Code2, Palette } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Github, Download, Code2, Palette, Layers } from 'lucide-react';
 
 const Header = () => {
   return (
@@ -18,8 +18,11 @@ const Header = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
                 <Code2 className="w-8 h-8 text-white" />
               </div>
-              <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-purple-500 rounded-xl flex items-center justify-center shadow-lg">
+              <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-purple-500 rounded-xl flex items-center justify-center mr-3 shadow-lg">
                 <Palette className="w-6 h-6 text-white" />
+              </div>
+              <div className="w-10 h-10 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-lg flex items-center justify-center shadow-lg">
+                <Layers className="w-5 h-5 text-white" />
               </div>
             </div>
             
@@ -27,22 +30,22 @@ const Header = () => {
               Alex Chen
             </h1>
             <h2 className="text-2xl lg:text-4xl text-gray-200 mb-6 font-light">
-              Senior Frontend Engineer
+              Senior Software Engineer
             </h2>
-            <p className="text-lg text-gray-300 max-w-2xl leading-relaxed">
-              Crafting exceptional user experiences with modern web technologies. 
-              Specialized in React ecosystems, performance optimization, and scalable frontend architectures.
+            <p className="text-lg text-gray-300 max-w-2xl leading-relaxed mb-6">
+              Frontend-focused engineer with 6 years of software development and 12 years of graphic design expertise. 
+              Bridging the gap between design and development to create pixel-perfect, performant user experiences.
             </p>
             
-            <div className="flex flex-wrap gap-3 mt-8 justify-center lg:justify-start">
+            <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
               <span className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium border border-white/20">
-                React Expert
+                6 Years Engineering
               </span>
               <span className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium border border-white/20">
-                TypeScript
+                12 Years Design
               </span>
               <span className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium border border-white/20">
-                UI/UX Focus
+                Design-to-Code Expert
               </span>
             </div>
           </div>

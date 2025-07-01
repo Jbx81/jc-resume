@@ -1,52 +1,61 @@
 import React from 'react';
-import { Code, Palette, Zap, Settings } from 'lucide-react';
+import { Code, Palette, Zap, Settings, Layers, Eye } from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend Frameworks",
+      title: "Frontend Development",
       icon: Code,
       color: "from-blue-500 to-cyan-500",
       skills: [
-        { name: "React/Next.js", level: 95, description: "Advanced hooks, SSR, performance optimization" },
+        { name: "React/Next.js", level: 95, description: "Advanced patterns, hooks, SSR, performance optimization" },
         { name: "TypeScript", level: 92, description: "Complex types, generics, advanced patterns" },
-        { name: "Vue.js/Nuxt", level: 85, description: "Composition API, state management" },
-        { name: "Svelte/SvelteKit", level: 78, description: "Modern reactive framework" }
+        { name: "JavaScript (ES6+)", level: 90, description: "Modern syntax, async/await, modules" },
+        { name: "HTML5/CSS3", level: 95, description: "Semantic markup, advanced layouts, animations" }
       ]
     },
     {
-      title: "Styling & Design",
+      title: "Design & Styling",
       icon: Palette,
       color: "from-purple-500 to-pink-500",
       skills: [
-        { name: "CSS3/Sass", level: 95, description: "Advanced layouts, animations, preprocessors" },
-        { name: "Tailwind CSS", level: 90, description: "Utility-first, custom configurations" },
-        { name: "Styled Components", level: 88, description: "CSS-in-JS, theming systems" },
-        { name: "Framer Motion", level: 85, description: "Complex animations, gestures" }
+        { name: "CSS/Sass/Less", level: 95, description: "Advanced layouts, animations, preprocessors" },
+        { name: "Tailwind CSS", level: 90, description: "Utility-first, custom configurations, design systems" },
+        { name: "Design Systems", level: 92, description: "Component libraries, design tokens, documentation" },
+        { name: "Responsive Design", level: 95, description: "Mobile-first, fluid layouts, breakpoint strategy" }
       ]
     },
     {
-      title: "Performance & Build",
-      icon: Zap,
-      color: "from-yellow-500 to-orange-500",
+      title: "Design Tools & Process",
+      icon: Eye,
+      color: "from-emerald-500 to-teal-500",
       skills: [
-        { name: "Webpack/Vite", level: 88, description: "Bundle optimization, code splitting" },
-        { name: "Web Performance", level: 92, description: "Core Web Vitals, optimization strategies" },
-        { name: "PWA Development", level: 85, description: "Service workers, offline functionality" },
-        { name: "Testing", level: 90, description: "Jest, Cypress, Testing Library" }
+        { name: "Figma/Adobe XD", level: 88, description: "Design handoff, prototyping, design systems" },
+        { name: "Adobe Creative Suite", level: 95, description: "12 years experience in print and digital design" },
+        { name: "Typography", level: 92, description: "Font selection, hierarchy, readability optimization" },
+        { name: "Color Theory", level: 90, description: "Palette creation, accessibility, brand consistency" }
       ]
     },
     {
-      title: "Tools & Workflow",
+      title: "Development Tools",
       icon: Settings,
-      color: "from-green-500 to-emerald-500",
+      color: "from-orange-500 to-red-500",
       skills: [
-        { name: "Git/GitHub", level: 95, description: "Advanced workflows, CI/CD integration" },
-        { name: "Design Systems", level: 90, description: "Component libraries, documentation" },
-        { name: "Accessibility", level: 88, description: "WCAG compliance, screen readers" },
-        { name: "GraphQL/REST", level: 85, description: "API integration, state management" }
+        { name: "Git/GitHub", level: 90, description: "Version control, collaboration, CI/CD workflows" },
+        { name: "Webpack/Vite", level: 85, description: "Build optimization, code splitting, bundling" },
+        { name: "Testing", level: 88, description: "Jest, React Testing Library, Cypress, visual testing" },
+        { name: "Performance", level: 90, description: "Core Web Vitals, optimization, monitoring" }
       ]
     }
+  ];
+
+  const designToCodeSkills = [
+    "Pixel-perfect implementation from design files",
+    "Design system architecture and component libraries", 
+    "Cross-browser compatibility and responsive design",
+    "Accessibility (WCAG 2.1) and inclusive design",
+    "Performance optimization without compromising design",
+    "Design-developer collaboration and handoff processes"
   ];
 
   return (
@@ -54,18 +63,18 @@ const Skills = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-2 bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
-            <Code className="w-4 h-4" />
+            <Layers className="w-4 h-4" />
             <span>Technical Expertise</span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Skills & Technologies</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Specialized in modern frontend technologies with a focus on performance, 
-            accessibility, and exceptional user experiences.
+            Combining 6 years of frontend engineering with 12 years of design expertise 
+            to create exceptional user experiences.
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8 mb-16">
           {skillCategories.map((category, index) => (
             <div key={index} className="group">
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 h-full">
@@ -104,39 +113,31 @@ const Skills = () => {
           ))}
         </div>
         
-        {/* Additional Skills Section */}
-        <div className="mt-16 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl p-8 lg:p-12 text-white">
+        {/* Design-to-Code Specialization */}
+        <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl p-8 lg:p-12 text-white">
           <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold mb-4">Additional Expertise</h3>
-            <p className="text-indigo-100 text-lg">
-              Beyond core frontend skills, I bring valuable experience in these areas
+            <div className="flex items-center justify-center space-x-3 mb-4">
+              <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                <Layers className="w-6 h-6" />
+              </div>
+              <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                <Code className="w-6 h-6" />
+              </div>
+            </div>
+            <h3 className="text-3xl font-bold mb-4">Design-to-Code Specialization</h3>
+            <p className="text-indigo-100 text-lg max-w-3xl mx-auto">
+              My unique background bridges the gap between design and development, ensuring seamless 
+              translation of creative vision into functional, performant code.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🎨</span>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {designToCodeSkills.map((skill, index) => (
+              <div key={index} className="flex items-start space-x-3 p-4 bg-white/10 rounded-xl backdrop-blur-sm">
+                <div className="w-2 h-2 bg-cyan-400 rounded-full mt-3 flex-shrink-0"></div>
+                <span className="font-medium leading-relaxed">{skill}</span>
               </div>
-              <h4 className="text-xl font-semibold mb-2">UI/UX Collaboration</h4>
-              <p className="text-indigo-100">Working closely with designers to implement pixel-perfect interfaces</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">⚡</span>
-              </div>
-              <h4 className="text-xl font-semibold mb-2">Performance Optimization</h4>
-              <p className="text-indigo-100">Core Web Vitals expertise and advanced optimization techniques</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">♿</span>
-              </div>
-              <h4 className="text-xl font-semibold mb-2">Accessibility</h4>
-              <p className="text-indigo-100">WCAG 2.1 compliance and inclusive design practices</p>
-            </div>
+            ))}
           </div>
         </div>
       </div>

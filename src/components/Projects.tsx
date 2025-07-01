@@ -1,67 +1,67 @@
 import React from 'react';
-import { ExternalLink, Github, Zap, Star, Users, TrendingUp } from 'lucide-react';
+import { ExternalLink, Github, Zap, Star, Users, TrendingUp, Palette, Layers } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
     {
       title: "Design System & Component Library",
-      description: "Comprehensive React component library with TypeScript, Storybook documentation, and automated testing. Used across 15+ products with 50+ components.",
+      description: "Comprehensive React component library with design tokens, built from 12 years of design expertise. Features 60+ components with Storybook documentation and automated visual regression testing.",
       image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-      technologies: ["React", "TypeScript", "Storybook", "Rollup", "Jest", "Chromatic"],
-      metrics: ["15+ Products", "50+ Components", "99% Test Coverage"],
+      technologies: ["React", "TypeScript", "Storybook", "Design Tokens", "Figma", "Chromatic"],
+      metrics: ["20+ Products", "60+ Components", "99% Design Accuracy"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true,
-      category: "Architecture"
+      category: "Design Systems"
     },
     {
-      title: "Real-time Trading Dashboard",
-      description: "High-performance financial dashboard with WebSocket connections, real-time charts, and complex data visualizations. Handles 10k+ updates per second.",
-      image: "https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-      technologies: ["React", "D3.js", "WebSocket", "Redux Toolkit", "Canvas API", "Web Workers"],
-      metrics: ["10k+ Updates/sec", "Sub-100ms Latency", "1M+ Users"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: true,
-      category: "Performance"
-    },
-    {
-      title: "E-commerce Progressive Web App",
-      description: "Mobile-first PWA with offline capabilities, push notifications, and optimized checkout flow. Achieved 95+ Lighthouse scores across all metrics.",
+      title: "E-commerce Design-to-Code Platform",
+      description: "High-fidelity e-commerce platform built from detailed design specifications. Pixel-perfect implementation with advanced animations, micro-interactions, and responsive design across all devices.",
       image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-      technologies: ["Next.js", "PWA", "Service Workers", "Stripe", "Tailwind CSS", "Framer Motion"],
-      metrics: ["95+ Lighthouse", "40% Mobile Conversion", "Offline Support"],
+      technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "Stripe", "Figma", "TypeScript"],
+      metrics: ["Pixel Perfect", "95+ Lighthouse", "Mobile Optimized"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true,
-      category: "PWA"
+      category: "E-commerce"
     },
     {
-      title: "Interactive Data Visualization Platform",
-      description: "Complex data visualization tool with custom D3.js charts, real-time filtering, and export capabilities for business intelligence.",
-      image: "https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-      technologies: ["React", "D3.js", "TypeScript", "Canvas", "WebGL", "Node.js"],
-      metrics: ["Custom Visualizations", "Real-time Filtering", "Export Features"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false,
-      category: "Visualization"
-    },
-    {
-      title: "Collaborative Code Editor",
-      description: "Real-time collaborative code editor with syntax highlighting, live cursors, and integrated chat. Built with operational transforms.",
-      image: "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
-      technologies: ["React", "Monaco Editor", "WebSocket", "Operational Transform", "Node.js"],
-      metrics: ["Real-time Collaboration", "Multi-language Support", "Live Cursors"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false,
-      category: "Collaboration"
-    },
-    {
-      title: "Accessibility-First Admin Panel",
-      description: "Fully accessible admin interface following WCAG 2.1 AA standards with screen reader support and keyboard navigation.",
+      title: "Creative Portfolio CMS",
+      description: "Content management system for creative professionals, combining intuitive design with powerful functionality. Built with deep understanding of designer workflows and creative industry needs.",
       image: "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+      technologies: ["React", "Node.js", "MongoDB", "Cloudinary", "Adobe Creative SDK", "GraphQL"],
+      metrics: ["Creative Focused", "Asset Management", "Portfolio Builder"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: true,
+      category: "Creative Tools"
+    },
+    {
+      title: "Typography-Focused Blog Platform",
+      description: "Publishing platform emphasizing beautiful typography and reading experience, leveraging print design principles for optimal web readability.",
+      image: "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+      technologies: ["Next.js", "MDX", "Typography.js", "CSS Grid", "Web Fonts"],
+      metrics: ["Typography Focus", "Reading Experience", "Performance Optimized"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false,
+      category: "Publishing"
+    },
+    {
+      title: "Brand Guidelines Generator",
+      description: "Tool for creating comprehensive brand guidelines and style guides, drawing from extensive experience in brand design and print production.",
+      image: "https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+      technologies: ["React", "Canvas API", "Color Theory", "PDF Generation", "Brand Tools"],
+      metrics: ["Brand Guidelines", "Style Guides", "Export Tools"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false,
+      category: "Branding"
+    },
+    {
+      title: "Accessible Design System",
+      description: "WCAG 2.1 AA compliant component library with comprehensive accessibility features, keyboard navigation, and screen reader optimization.",
+      image: "https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
       technologies: ["React", "ARIA", "Focus Management", "Screen Reader Testing", "Axe-core"],
       metrics: ["WCAG 2.1 AA", "100% Keyboard Nav", "Screen Reader Optimized"],
       liveUrl: "#",
@@ -76,19 +76,22 @@ const Projects = () => {
 
   const getCategoryIcon = (category: string) => {
     switch (category) {
-      case 'Architecture': return <Star className="w-4 h-4" />;
-      case 'Performance': return <Zap className="w-4 h-4" />;
-      case 'PWA': return <TrendingUp className="w-4 h-4" />;
-      default: return <Users className="w-4 h-4" />;
+      case 'Design Systems': return <Layers className="w-4 h-4" />;
+      case 'E-commerce': return <TrendingUp className="w-4 h-4" />;
+      case 'Creative Tools': return <Palette className="w-4 h-4" />;
+      default: return <Star className="w-4 h-4" />;
     }
   };
 
   const getCategoryColor = (category: string) => {
     switch (category) {
-      case 'Architecture': return 'from-purple-500 to-indigo-500';
-      case 'Performance': return 'from-yellow-500 to-orange-500';
-      case 'PWA': return 'from-green-500 to-emerald-500';
-      default: return 'from-blue-500 to-cyan-500';
+      case 'Design Systems': return 'from-purple-500 to-indigo-500';
+      case 'E-commerce': return 'from-green-500 to-emerald-500';
+      case 'Creative Tools': return 'from-pink-500 to-rose-500';
+      case 'Publishing': return 'from-blue-500 to-cyan-500';
+      case 'Branding': return 'from-orange-500 to-red-500';
+      case 'Accessibility': return 'from-teal-500 to-cyan-500';
+      default: return 'from-gray-500 to-slate-500';
     }
   };
 
@@ -103,8 +106,8 @@ const Projects = () => {
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Featured Projects</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Showcasing frontend engineering excellence through performance-focused, 
-            accessible, and scalable web applications.
+            Showcasing the intersection of design expertise and engineering excellence through 
+            pixel-perfect, performant, and accessible web applications.
           </p>
         </div>
         
