@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Code2, Palette, Brain, Sparkles, Zap, Star, ChevronDown } from 'lucide-react';
+import { ArrowRight, Code2, Palette, Layers, Sparkles, Zap, Star, ChevronDown } from 'lucide-react';
 
 const Home = () => {
   const highlights = [
@@ -19,11 +19,11 @@ const Home = () => {
       link: "/about"
     },
     {
-      icon: Brain,
-      title: "AI Engineering",
-      description: "Pioneering AI-driven development workflows",
+      icon: Layers,
+      title: "Design Systems",
+      description: "Bridging design and development seamlessly",
       color: "from-emerald-500 to-teal-500",
-      link: "/current-projects"
+      link: "/skills"
     }
   ];
 
@@ -43,49 +43,50 @@ const Home = () => {
           {/* Status Badge */}
           <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 py-3 rounded-full text-sm font-medium mb-8 animate-fade-in">
             <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-            <span>Available for AI Engineering Opportunities</span>
+            <span>Available for new opportunities</span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-6xl lg:text-8xl font-bold mb-8 leading-tight">
             <span className="block bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-              Jonathan
+              Alex
             </span>
             <span className="block bg-gradient-to-r from-purple-400 via-pink-400 to-rose-400 bg-clip-text text-transparent">
-              Ciccarella
+              Chen
             </span>
           </h1>
 
           {/* Subtitle */}
           <div className="text-2xl lg:text-4xl text-gray-200 mb-8 font-light">
-            <span className="block">AI-Driven Frontend Engineer</span>
+            <span className="block">Senior Software Engineer</span>
             <span className="block text-lg lg:text-xl text-gray-300 mt-2">
-              Where Design Excellence Meets AI Innovation
+              Where Design Excellence Meets Engineering Precision
             </span>
           </div>
 
           {/* Description */}
           <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-12">
-            Combining 6 years of software engineering with 12 years of graphic design mastery, 
-            now pioneering the future of development through AI-enhanced workflows and intelligent automation.
+            Combining 6 years of software engineering with 12 years of graphic design mastery 
+            to create pixel-perfect, performant user experiences that bridge the gap between 
+            creative vision and technical excellence.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
             <Link
-              to="/current-projects"
+              to="/experience"
               className="group flex items-center space-x-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 shadow-2xl hover:shadow-cyan-500/25 hover:scale-105"
             >
-              <Brain className="w-6 h-6 group-hover:rotate-12 transition-transform" />
-              <span>Explore AI Projects</span>
+              <Code2 className="w-6 h-6 group-hover:rotate-12 transition-transform" />
+              <span>View My Work</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
-              to="/experience"
+              to="/about"
               className="group flex items-center space-x-3 bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300"
             >
-              <Code2 className="w-6 h-6" />
-              <span>View Experience</span>
+              <Palette className="w-6 h-6" />
+              <span>About Me</span>
             </Link>
           </div>
 
@@ -109,7 +110,7 @@ const Home = () => {
             </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 mx-auto mb-8"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              A unique blend of creative vision, technical excellence, and AI innovation
+              A unique blend of creative vision, technical excellence, and user-centered design
             </p>
           </div>
 
@@ -141,12 +142,12 @@ const Home = () => {
         </div>
       </section>
 
-      {/* AI Innovation Callout */}
+      {/* Design-to-Code Callout */}
       <section className="py-24 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <div className="flex items-center justify-center space-x-4 mb-8">
             <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center">
-              <Brain className="w-8 h-8 text-white" />
+              <Palette className="w-8 h-8 text-white" />
             </div>
             <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
               <Zap className="w-6 h-6 text-white" />
@@ -157,28 +158,28 @@ const Home = () => {
           </div>
           
           <h2 className="text-4xl lg:text-6xl font-bold text-white mb-8">
-            Pioneering AI-Enhanced Development
+            Design-to-Code Excellence
           </h2>
           <p className="text-xl text-indigo-100 max-w-4xl mx-auto leading-relaxed mb-12">
-            Currently exploring the frontiers of AI engineering, building MCP clients and servers, 
-            and developing intelligent workflows that revolutionize how we create digital experiences.
+            My unique background in both design and development allows me to translate creative visions 
+            into pixel-perfect, performant applications with an intuitive understanding of both worlds.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link
-              to="/current-projects"
+              to="/skills"
               className="group flex items-center space-x-3 bg-white text-indigo-600 hover:bg-gray-50 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105"
             >
-              <Brain className="w-6 h-6 group-hover:rotate-12 transition-transform" />
-              <span>View AI Projects</span>
+              <Layers className="w-6 h-6 group-hover:rotate-12 transition-transform" />
+              <span>View Skills</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
-              to="/skills"
+              to="/contact"
               className="group flex items-center space-x-3 bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300"
             >
-              <Zap className="w-6 h-6" />
-              <span>Technical Skills</span>
+              <Sparkles className="w-6 h-6" />
+              <span>Get In Touch</span>
             </Link>
           </div>
         </div>

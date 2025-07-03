@@ -1,238 +1,253 @@
 import React from 'react';
-import { Brain, Zap, Code2, Layers, Lightbulb, Cpu, Network, Bot, Sparkles, ArrowRight, ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github, Zap, Star, Users, TrendingUp, Palette, Layers } from 'lucide-react';
 
 const CurrentProjects = () => {
-  const aiProjects = [
+  const projects = [
     {
-      title: "MCP Client Development",
-      description: "Building sophisticated Model Context Protocol clients that seamlessly integrate with AI models to enhance development workflows and automate complex tasks.",
-      status: "Active Development",
-      technologies: ["TypeScript", "Node.js", "MCP Protocol", "AI APIs", "WebSockets"],
-      features: [
-        "Real-time AI model communication",
-        "Context-aware prompt management", 
-        "Automated code generation workflows",
-        "Integration with development tools"
-      ],
-      icon: Network,
-      color: "from-blue-500 to-cyan-500",
-      progress: 75
+      title: "Design System & Component Library",
+      description: "Comprehensive React component library with design tokens, built from 12 years of design expertise. Features 60+ components with Storybook documentation and automated visual regression testing.",
+      image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+      technologies: ["React", "TypeScript", "Storybook", "Design Tokens", "Figma", "Chromatic"],
+      metrics: ["20+ Products", "60+ Components", "99% Design Accuracy"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: true,
+      category: "Design Systems"
     },
     {
-      title: "MCP Server Infrastructure",
-      description: "Developing robust MCP servers that provide AI models with enhanced context and capabilities, enabling more intelligent and context-aware responses.",
-      status: "Beta Testing",
-      technologies: ["Python", "FastAPI", "Docker", "Redis", "PostgreSQL"],
-      features: [
-        "High-performance context serving",
-        "Scalable architecture design",
-        "Real-time data synchronization",
-        "Advanced caching mechanisms"
-      ],
-      icon: Cpu,
-      color: "from-purple-500 to-pink-500",
-      progress: 85
+      title: "E-commerce Design-to-Code Platform",
+      description: "High-fidelity e-commerce platform built from detailed design specifications. Pixel-perfect implementation with advanced animations, micro-interactions, and responsive design across all devices.",
+      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+      technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "Stripe", "Figma", "TypeScript"],
+      metrics: ["Pixel Perfect", "95+ Lighthouse", "Mobile Optimized"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: true,
+      category: "E-commerce"
     },
     {
-      title: "AI-Enhanced Design System",
-      description: "Creating an intelligent design system that uses AI to automatically generate components, suggest improvements, and maintain design consistency across projects.",
-      status: "Research Phase",
-      technologies: ["React", "AI/ML", "Design Tokens", "Figma API", "Computer Vision"],
-      features: [
-        "Automated component generation",
-        "Design consistency analysis",
-        "Intelligent color palette suggestions",
-        "Accessibility optimization"
-      ],
-      icon: Layers,
-      color: "from-emerald-500 to-teal-500",
-      progress: 40
+      title: "Creative Portfolio CMS",
+      description: "Content management system for creative professionals, combining intuitive design with powerful functionality. Built with deep understanding of designer workflows and creative industry needs.",
+      image: "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+      technologies: ["React", "Node.js", "MongoDB", "Cloudinary", "Adobe Creative SDK", "GraphQL"],
+      metrics: ["Creative Focused", "Asset Management", "Portfolio Builder"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: true,
+      category: "Creative Tools"
     },
     {
-      title: "Prompt Engineering Framework",
-      description: "Developing a comprehensive framework for prompt engineering that optimizes AI interactions and ensures consistent, high-quality outputs across different use cases.",
-      status: "Active Development",
-      technologies: ["Python", "LangChain", "OpenAI API", "Anthropic API", "Vector Databases"],
-      features: [
-        "Template-based prompt management",
-        "A/B testing for prompt optimization",
-        "Performance analytics dashboard",
-        "Multi-model compatibility"
-      ],
-      icon: Lightbulb,
-      color: "from-yellow-500 to-orange-500",
-      progress: 60
+      title: "Typography-Focused Blog Platform",
+      description: "Publishing platform emphasizing beautiful typography and reading experience, leveraging print design principles for optimal web readability.",
+      image: "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+      technologies: ["Next.js", "MDX", "Typography.js", "CSS Grid", "Web Fonts"],
+      metrics: ["Typography Focus", "Reading Experience", "Performance Optimized"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false,
+      category: "Publishing"
+    },
+    {
+      title: "Brand Guidelines Generator",
+      description: "Tool for creating comprehensive brand guidelines and style guides, drawing from extensive experience in brand design and print production.",
+      image: "https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+      technologies: ["React", "Canvas API", "Color Theory", "PDF Generation", "Brand Tools"],
+      metrics: ["Brand Guidelines", "Style Guides", "Export Tools"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false,
+      category: "Branding"
+    },
+    {
+      title: "Accessible Design System",
+      description: "WCAG 2.1 AA compliant component library with comprehensive accessibility features, keyboard navigation, and screen reader optimization.",
+      image: "https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+      technologies: ["React", "ARIA", "Focus Management", "Screen Reader Testing", "Axe-core"],
+      metrics: ["WCAG 2.1 AA", "100% Keyboard Nav", "Screen Reader Optimized"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false,
+      category: "Accessibility"
     }
   ];
 
-  const learningFocus = [
-    {
-      title: "Advanced AI Model Integration",
-      description: "Exploring cutting-edge techniques for integrating AI models into web applications",
-      icon: Brain
-    },
-    {
-      title: "Prompt Engineering Mastery",
-      description: "Developing expertise in crafting optimal prompts for various AI models and use cases",
-      icon: Lightbulb
-    },
-    {
-      title: "MCP Protocol Deep Dive",
-      description: "Mastering the Model Context Protocol for enhanced AI-application communication",
-      icon: Network
-    },
-    {
-      title: "AI-Driven Development Workflows",
-      description: "Creating intelligent development processes that leverage AI for code generation and optimization",
-      icon: Code2
+  const featuredProjects = projects.filter(project => project.featured);
+  const otherProjects = projects.filter(project => !project.featured);
+
+  const getCategoryIcon = (category: string) => {
+    switch (category) {
+      case 'Design Systems': return <Layers className="w-4 h-4" />;
+      case 'E-commerce': return <TrendingUp className="w-4 h-4" />;
+      case 'Creative Tools': return <Palette className="w-4 h-4" />;
+      default: return <Star className="w-4 h-4" />;
     }
-  ];
+  };
+
+  const getCategoryColor = (category: string) => {
+    switch (category) {
+      case 'Design Systems': return 'from-purple-500 to-indigo-500';
+      case 'E-commerce': return 'from-green-500 to-emerald-500';
+      case 'Creative Tools': return 'from-pink-500 to-rose-500';
+      case 'Publishing': return 'from-blue-500 to-cyan-500';
+      case 'Branding': return 'from-orange-500 to-red-500';
+      case 'Accessibility': return 'from-teal-500 to-cyan-500';
+      default: return 'from-gray-500 to-slate-500';
+    }
+  };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-20 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-2 bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
-            <Brain className="w-4 h-4" />
-            <span>AI Innovation</span>
+          <div className="inline-flex items-center space-x-2 bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <Star className="w-4 h-4" />
+            <span>Portfolio</span>
           </div>
-          <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">Current Projects</h1>
-          <div className="w-32 h-1 bg-gradient-to-r from-emerald-500 to-teal-600 mx-auto mb-8"></div>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-            Pioneering the future of development through AI-enhanced workflows, MCP development, 
-            and intelligent automation systems.
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Featured Projects</h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-600 mx-auto mb-8"></div>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Showcasing the intersection of design expertise and engineering excellence through 
+            pixel-perfect, performant, and accessible web applications.
           </p>
         </div>
-
-        {/* AI Projects */}
-        <div className="space-y-12 mb-20">
-          {aiProjects.map((project, index) => (
-            <div key={index} className="group relative">
-              <div className="absolute -inset-4 bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl blur-xl" 
-                   style={{background: `linear-gradient(135deg, var(--tw-gradient-stops))`}}></div>
-              <div className="relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 p-8 lg:p-12 border border-gray-100 group-hover:border-gray-200">
+        
+        {/* Featured Projects */}
+        <div className="space-y-16 mb-20">
+          {featuredProjects.map((project, index) => (
+            <div key={index} className={`flex flex-col ${index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12`}>
+              <div className="lg:w-1/2">
+                <div className="relative group overflow-hidden rounded-2xl shadow-2xl">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-80 lg:h-96 object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute top-6 left-6">
+                    <div className={`flex items-center space-x-2 bg-gradient-to-r ${getCategoryColor(project.category)} text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg`}>
+                      {getCategoryIcon(project.category)}
+                      <span>{project.category}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="lg:w-1/2 space-y-8">
+                <div>
+                  <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">{project.title}</h3>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">{project.description}</p>
+                </div>
                 
-                {/* Header */}
-                <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-8">
-                  <div className="flex items-start space-x-6 flex-1">
-                    <div className={`w-20 h-20 bg-gradient-to-br ${project.color} rounded-3xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                      <project.icon className="w-10 h-10 text-white" />
+                {/* Metrics */}
+                <div className="grid grid-cols-3 gap-4">
+                  {project.metrics.map((metric, idx) => (
+                    <div key={idx} className="text-center p-4 bg-white rounded-xl shadow-md border border-gray-100">
+                      <div className="text-sm font-semibold text-gray-900">{metric}</div>
                     </div>
-                    <div className="flex-1">
-                      <div className="flex items-center space-x-4 mb-4">
-                        <h3 className="text-2xl lg:text-3xl font-bold text-gray-900">{project.title}</h3>
-                        <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                          project.status === 'Active Development' ? 'bg-green-100 text-green-800' :
-                          project.status === 'Beta Testing' ? 'bg-blue-100 text-blue-800' :
-                          'bg-yellow-100 text-yellow-800'
-                        }`}>
-                          {project.status}
-                        </span>
-                      </div>
-                      <p className="text-lg text-gray-700 leading-relaxed">{project.description}</p>
-                    </div>
+                  ))}
+                </div>
+                
+                {/* Technologies */}
+                <div className="space-y-3">
+                  <h4 className="text-lg font-semibold text-gray-900">Technologies Used</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech, idx) => (
+                      <span key={idx} className="px-4 py-2 bg-gradient-to-r from-gray-100 to-gray-200 text-gray-800 rounded-full text-sm font-medium hover:from-gray-200 hover:to-gray-300 transition-colors">
+                        {tech}
+                      </span>
+                    ))}
                   </div>
                 </div>
-
-                {/* Progress Bar */}
-                <div className="mb-8">
-                  <div className="flex justify-between items-center mb-3">
-                    <span className="text-sm font-semibold text-gray-700">Development Progress</span>
-                    <span className="text-sm font-bold text-gray-900">{project.progress}%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 rounded-full h-3">
-                    <div 
-                      className={`h-3 rounded-full bg-gradient-to-r ${project.color} transition-all duration-1000 ease-out`}
-                      style={{ width: `${project.progress}%` }}
-                    ></div>
-                  </div>
-                </div>
-
-                {/* Features and Technologies */}
-                <div className="grid lg:grid-cols-2 gap-8">
-                  <div>
-                    <h4 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-                      <Sparkles className="w-5 h-5 text-emerald-500 mr-2" />
-                      Key Features
-                    </h4>
-                    <div className="space-y-3">
-                      {project.features.map((feature, idx) => (
-                        <div key={idx} className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-emerald-500 rounded-full mt-3 flex-shrink-0"></div>
-                          <span className="text-gray-700">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <h4 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-                      <Code2 className="w-5 h-5 text-blue-500 mr-2" />
-                      Technologies
-                    </h4>
-                    <div className="flex flex-wrap gap-2">
-                      {project.technologies.map((tech, idx) => (
-                        <span key={idx} className="px-3 py-2 bg-gray-100 text-gray-800 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors">
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
+                
+                {/* Action Buttons */}
+                <div className="flex space-x-4">
+                  <a 
+                    href={project.liveUrl} 
+                    className="flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-8 py-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl font-semibold"
+                  >
+                    <ExternalLink className="w-5 h-5" />
+                    <span>Live Demo</span>
+                  </a>
+                  <a 
+                    href={project.githubUrl}
+                    className="flex items-center space-x-2 bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-xl transition-colors shadow-lg hover:shadow-xl font-semibold"
+                  >
+                    <Github className="w-5 h-5" />
+                    <span>Source Code</span>
+                  </a>
                 </div>
               </div>
             </div>
           ))}
         </div>
-
-        {/* Learning Focus */}
-        <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-3xl p-8 lg:p-12 text-white">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">Current Learning Focus</h2>
-            <p className="text-xl text-indigo-100 max-w-3xl mx-auto">
-              Continuously expanding expertise in AI engineering and exploring the latest developments 
-              in artificial intelligence and machine learning.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {learningFocus.map((focus, index) => (
-              <div key={index} className="group">
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 border border-white/20">
-                  <div className="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <focus.icon className="w-7 h-7 text-white" />
+        
+        {/* Other Projects */}
+        <div>
+          <h3 className="text-3xl font-bold text-gray-900 mb-12 text-center">Additional Projects</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {otherProjects.map((project, index) => (
+              <div key={index} className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
+                <div className="relative overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <div className={`flex items-center space-x-1 bg-gradient-to-r ${getCategoryColor(project.category)} text-white px-3 py-1 rounded-full text-xs font-medium`}>
+                      {getCategoryIcon(project.category)}
+                      <span>{project.category}</span>
+                    </div>
                   </div>
-                  <h3 className="text-lg font-bold mb-3">{focus.title}</h3>
-                  <p className="text-indigo-100 text-sm leading-relaxed">{focus.description}</p>
+                </div>
+                
+                <div className="p-6 space-y-4">
+                  <h4 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">{project.title}</h4>
+                  <p className="text-gray-700 text-sm leading-relaxed">{project.description}</p>
+                  
+                  {/* Metrics */}
+                  <div className="flex flex-wrap gap-2">
+                    {project.metrics.slice(0, 2).map((metric, idx) => (
+                      <span key={idx} className="px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs font-medium">
+                        {metric}
+                      </span>
+                    ))}
+                  </div>
+                  
+                  {/* Technologies */}
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.slice(0, 3).map((tech, idx) => (
+                      <span key={idx} className="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs font-medium">
+                        {tech}
+                      </span>
+                    ))}
+                    {project.technologies.length > 3 && (
+                      <span className="px-2 py-1 bg-gray-200 text-gray-600 rounded text-xs">
+                        +{project.technologies.length - 3} more
+                      </span>
+                    )}
+                  </div>
+                  
+                  {/* Action Links */}
+                  <div className="flex justify-between items-center pt-4 border-t border-gray-100">
+                    <a 
+                      href={project.liveUrl}
+                      className="flex items-center space-x-1 text-blue-600 hover:text-blue-700 font-medium text-sm transition-colors"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      <span>Live Demo</span>
+                    </a>
+                    <a 
+                      href={project.githubUrl}
+                      className="flex items-center space-x-1 text-gray-700 hover:text-gray-900 font-medium text-sm transition-colors"
+                    >
+                      <Github className="w-4 h-4" />
+                      <span>Code</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center mt-16">
-          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Interested in AI Engineering Collaboration?</h3>
-            <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-              I'm always excited to discuss AI engineering projects, share insights about MCP development, 
-              or explore potential collaborations in the AI space.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
-                className="inline-flex items-center space-x-2 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
-              >
-                <span>Let's Connect</span>
-                <ArrowRight className="w-5 h-5" />
-              </a>
-              <a
-                href="https://github.com/Jonathan-Ciccarella_mmcgh"
-                className="inline-flex items-center space-x-2 bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-xl font-semibold transition-colors shadow-lg hover:shadow-xl"
-              >
-                <Github className="w-5 h-5" />
-                <span>View Code</span>
-              </a>
-            </div>
           </div>
         </div>
       </div>

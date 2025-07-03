@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, CheckCircle, MessageSquare, Calendar, Coffee, Brain, Code2, Palette } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, CheckCircle, MessageSquare, Calendar, Coffee } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -26,9 +26,7 @@ const Contact = () => {
   };
 
   const contactReasons = [
-    "AI Engineering Role",
     "Frontend Development Role",
-    "AI Consulting & MCP Development", 
     "Freelance/Contract Work", 
     "Technical Consultation",
     "Speaking Opportunity",
@@ -44,11 +42,11 @@ const Contact = () => {
             <MessageSquare className="w-4 h-4" />
             <span>Let's Connect</span>
           </div>
-          <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">Get In Touch</h1>
-          <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-cyan-600 mx-auto mb-8"></div>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-            I'm always excited to discuss AI engineering opportunities, collaborate on innovative projects, 
-            or chat about the latest in frontend development and artificial intelligence.
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Get In Touch</h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-600 mx-auto mb-8"></div>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            I'm always excited to discuss new opportunities, collaborate on interesting projects, 
+            or chat about the latest in frontend development.
           </p>
         </div>
         
@@ -56,7 +54,7 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="lg:col-span-2 space-y-8">
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
-              <h2 className="text-2xl font-bold text-gray-900 mb-8">Contact Information</h2>
+              <h3 className="text-2xl font-bold text-gray-900 mb-8">Contact Information</h3>
               
               <div className="space-y-6">
                 <div className="flex items-center space-x-4 group">
@@ -65,7 +63,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900 text-lg">Email</p>
-                    <p className="text-gray-600">jonciccarella@email.com</p>
+                    <p className="text-gray-600">alex.chen@email.com</p>
                   </div>
                 </div>
                 
@@ -75,7 +73,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900 text-lg">Phone</p>
-                    <p className="text-gray-600">+1 (917) 539-0816</p>
+                    <p className="text-gray-600">+1 (555) 987-6543</p>
                   </div>
                 </div>
                 
@@ -85,33 +83,33 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900 text-lg">Location</p>
-                    <p className="text-gray-600">Hoboken, NJ</p>
+                    <p className="text-gray-600">Seattle, WA</p>
                   </div>
                 </div>
               </div>
             </div>
             
             <div className="bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl p-8 text-white">
-              <h2 className="text-2xl font-bold mb-6 flex items-center">
+              <h3 className="text-2xl font-bold mb-6 flex items-center">
                 <Coffee className="w-7 h-7 mr-3" />
                 Let's Collaborate
-              </h2>
+              </h3>
               <p className="mb-6 text-indigo-100 leading-relaxed">
                 I'm currently open to new opportunities and always interested in discussing 
-                AI engineering projects, innovative frontend challenges, and potential collaborations.
+                innovative frontend projects, technical challenges, and potential collaborations.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
-                  <Brain className="w-5 h-5 text-cyan-400" />
-                  <span>Available for AI engineering roles</span>
+                  <CheckCircle className="w-5 h-5 text-cyan-400" />
+                  <span>Available for full-time roles</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Code2 className="w-5 h-5 text-cyan-400" />
-                  <span>Open to frontend development projects</span>
+                  <CheckCircle className="w-5 h-5 text-cyan-400" />
+                  <span>Open to consulting projects</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Palette className="w-5 h-5 text-cyan-400" />
-                  <span>Design-to-code consulting available</span>
+                  <CheckCircle className="w-5 h-5 text-cyan-400" />
+                  <span>Speaking & mentoring opportunities</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Calendar className="w-5 h-5 text-cyan-400" />
@@ -124,7 +122,7 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="lg:col-span-3">
             <div className="bg-white rounded-2xl p-8 lg:p-10 shadow-lg border border-gray-100">
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">Send Me a Message</h2>
+              <h3 className="text-3xl font-bold text-gray-900 mb-8">Send Me a Message</h3>
               
               {isSubmitted && (
                 <div className="mb-8 p-6 bg-green-50 text-green-800 rounded-xl flex items-center space-x-3 border border-green-200">

@@ -27,7 +27,7 @@ const Header = () => {
             </div>
             
             <h1 className="text-5xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent leading-tight">
-              Jonathan Ciccarella
+              Alex Chen
             </h1>
             <h2 className="text-2xl lg:text-4xl text-gray-200 mb-6 font-light">
               Senior Software Engineer
@@ -42,11 +42,11 @@ const Header = () => {
                 6 Years Engineering
               </span>
               <span className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium border border-white/20">
-                12 Years Combined Design and Product Management
+                12 Years Design
               </span>
-              {/* <span className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium border border-white/20">
+              <span className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium border border-white/20">
                 Design-to-Code Expert
-              </span> */}
+              </span>
             </div>
           </div>
           
@@ -56,28 +56,28 @@ const Header = () => {
                 <div className="w-10 h-10 bg-cyan-500/20 rounded-lg flex items-center justify-center group-hover:bg-cyan-500/30 transition-colors">
                   <Mail className="w-5 h-5 text-cyan-400" />
                 </div>
-                <span className="font-medium">jonciccarella@email.com</span>
+                <span className="font-medium">alex.chen@email.com</span>
               </div>
               <div className="flex items-center space-x-4 text-gray-200 hover:text-white transition-colors group">
                 <div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center group-hover:bg-blue-500/30 transition-colors">
                   <Phone className="w-5 h-5 text-blue-400" />
                 </div>
-                <span className="font-medium">+1 (917) 539-0816</span>
+                <span className="font-medium">+1 (555) 987-6543</span>
               </div>
               <div className="flex items-center space-x-4 text-gray-200 hover:text-white transition-colors group">
                 <div className="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center group-hover:bg-purple-500/30 transition-colors">
                   <MapPin className="w-5 h-5 text-purple-400" />
                 </div>
-                <span className="font-medium">Hoboken, NJ</span>
+                <span className="font-medium">Seattle, WA</span>
               </div>
               
               <div className="pt-4 border-t border-white/20">
                 <div className="grid grid-cols-3 gap-3">
-                  <a href="https://www.linkedin.com/in/jonciccarella" className="flex flex-col items-center space-y-2 bg-blue-600/20 hover:bg-blue-600/30 p-3 rounded-xl transition-colors group">
+                  <a href="#" className="flex flex-col items-center space-y-2 bg-blue-600/20 hover:bg-blue-600/30 p-3 rounded-xl transition-colors group">
                     <Linkedin className="w-5 h-5 text-blue-400 group-hover:scale-110 transition-transform" />
                     <span className="text-xs font-medium">LinkedIn</span>
                   </a>
-                  <a href="https://www.github.com/Jonathan-Ciccarella_mmcgh" className="flex flex-col items-center space-y-2 bg-gray-600/20 hover:bg-gray-600/30 p-3 rounded-xl transition-colors group">
+                  <a href="#" className="flex flex-col items-center space-y-2 bg-gray-600/20 hover:bg-gray-600/30 p-3 rounded-xl transition-colors group">
                     <Github className="w-5 h-5 text-gray-300 group-hover:scale-110 transition-transform" />
                     <span className="text-xs font-medium">GitHub</span>
                   </a>

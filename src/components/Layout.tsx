@@ -47,15 +47,15 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <Link to="/" className="flex items-center space-x-3 group">
               <div className="relative">
                 <div className="w-12 h-12 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-white font-bold text-lg">JC</span>
+                  <span className="text-white font-bold text-lg">AC</span>
                 </div>
                 <div className="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full animate-pulse"></div>
               </div>
               <div className="hidden sm:block">
                 <div className="text-xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
-                  Jonathan Ciccarella
+                  Alex Chen
                 </div>
-                <div className="text-sm text-gray-600 font-medium">AI-Driven Frontend Engineer</div>
+                <div className="text-sm text-gray-600 font-medium">Senior Software Engineer</div>
               </div>
             </Link>
 
@@ -131,15 +131,15 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">JC</span>
+                  <span className="text-white font-bold text-lg">AC</span>
                 </div>
                 <div>
-                  <div className="text-xl font-bold">Jonathan Ciccarella</div>
-                  <div className="text-gray-400">AI-Driven Frontend Engineer</div>
+                  <div className="text-xl font-bold">Alex Chen</div>
+                  <div className="text-gray-400">Senior Software Engineer</div>
                 </div>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                Bridging design excellence with AI-powered engineering to create the future of web experiences.
+                Bridging design excellence with engineering precision to create exceptional user experiences.
               </p>
             </div>
 
@@ -164,12 +164,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div>
               <h3 className="text-lg font-semibold mb-4 text-white">Get In Touch</h3>
               <div className="space-y-3 text-gray-300">
-                <div>jonciccarella@email.com</div>
-                <div>+1 (917) 539-0816</div>
-                <div>Hoboken, NJ</div>
+                <div>alex.chen@email.com</div>
+                <div>+1 (555) 987-6543</div>
+                <div>Seattle, WA</div>
                 <div className="pt-4">
                   <div className="text-sm text-gray-400">
-                    © 2025 Jonathan Ciccarella. Crafted with React, TypeScript, and AI-enhanced workflows.
+                    © 2025 Alex Chen. Crafted with React, TypeScript, and design excellence.
                   </div>
                 </div>
               </div>
