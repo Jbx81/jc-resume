@@ -4,24 +4,24 @@ import { GraduationCap, Award, Calendar, BookOpen, Palette } from 'lucide-react'
 const Education = () => {
   const education = [
     {
-      degree: "Bachelor of Science in Computer Science",
-      school: "University of Washington",
-      location: "Seattle, WA",
-      year: "2018",
+      degree: "Software Engineering Intensive Certificate",
+      school: "Fullstack Academy of Code",
+      location: "New York, NY",
+      year: "2019",
       gpa: "3.8/4.0",
       focus: "Specialization in Human-Computer Interaction and Web Technologies",
-      coursework: ["Advanced Web Development", "UI/UX Design", "Data Structures", "Software Engineering"],
-      note: "Career transition from graphic design to software engineering"
+      coursework: ["Advanced Web Development", "Computer Science Fundamentals", "Data Structures", "Software Engineering"],
+      note: "Career transition from print publications to software engineering"
     },
     {
-      degree: "Associate of Applied Arts in Graphic Design",
-      school: "Seattle Central College",
-      location: "Seattle, WA", 
+      degree: "Bachelor of Fine Arts in Graphic Design",
+      school: "Marywood University",
+      location: "Scranton, PA",
       year: "2006",
       gpa: "3.9/4.0",
       focus: "Print Production, Typography, and Visual Communication",
       coursework: ["Typography", "Print Production", "Color Theory", "Brand Design"],
-      note: "Foundation for 12-year design career"
+      note: "Foundation for 12-year design / print publications career, minor in Business."
     }
   ];
 
