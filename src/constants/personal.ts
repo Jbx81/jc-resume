@@ -1,0 +1,1 @@
+export const personalDescription = "Leveraging 6 years of software engineering expertise and 12 years of combined graphic design mastery, leadership and project management skills -- transforming complex technical challenges into innovative, user-focused solutions that seamlessly blend creative vision with technical excellence.";

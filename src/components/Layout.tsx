@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState,useEffect } from 'react'; 
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Code2, Palette, Brain, Sparkles } from 'lucide-react';
 
@@ -53,7 +53,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               </div>
               <div className="hidden sm:block">
                 <div className="text-xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
-                  Alex Chen
+                  Jonathan Ciccarella
                 </div>
                 <div className="text-sm text-gray-600 font-medium">Senior Software Engineer</div>
               </div>
@@ -134,7 +134,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   <span className="text-white font-bold text-lg">AC</span>
                 </div>
                 <div>
-                  <div className="text-xl font-bold">Alex Chen</div>
+                  <div className="text-xl font-bold">Jonathan Ciccarella</div>
                   <div className="text-gray-400">Senior Software Engineer</div>
                 </div>
               </div>
@@ -164,12 +164,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div>
               <h3 className="text-lg font-semibold mb-4 text-white">Get In Touch</h3>
               <div className="space-y-3 text-gray-300">
-                <div>alex.chen@email.com</div>
-                <div>+1 (555) 987-6543</div>
-                <div>Seattle, WA</div>
+                <div>JonCiccarella@email.com</div>
+                <div>+1 (917) 539-0816</div>
+                <div>Hoboken, NJ</div>
                 <div className="pt-4">
                   <div className="text-sm text-gray-400">
-                    © 2025 Alex Chen. Crafted with React, TypeScript, and design excellence.
+                    © 2025 Jonathan Ciccarella. Crafted with React, TypeScript, and design excellence.
                   </div>
                 </div>
               </div>

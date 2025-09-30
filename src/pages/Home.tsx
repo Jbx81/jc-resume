@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Code2, Palette, Layers, Sparkles, Zap, Star, ChevronDown } from 'lucide-react';
 
+import { personalDescription } from '../constants/personal';
+
+
 const Home = () => {
   const highlights = [
     {
@@ -49,10 +52,10 @@ const Home = () => {
           {/* Main Heading */}
           <h1 className="text-6xl lg:text-8xl font-bold mb-8 leading-tight">
             <span className="block bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-              Alex
+              Jonathan
             </span>
             <span className="block bg-gradient-to-r from-purple-400 via-pink-400 to-rose-400 bg-clip-text text-transparent">
-              Chen
+              Ciccarella
             </span>
           </h1>
 
@@ -66,9 +69,7 @@ const Home = () => {
 
           {/* Description */}
           <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-12">
-            Combining 6 years of software engineering with 12 years of graphic design mastery 
-            to create pixel-perfect, performant user experiences that bridge the gap between 
-            creative vision and technical excellence.
+            {personalDescription}
           </p>
 
           {/* CTA Buttons */}
