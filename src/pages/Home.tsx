@@ -17,7 +17,7 @@ const Home = () => {
     {
       icon: Palette,
       title: "Design Heritage",
-      description: "12 years in print production & graphic design",
+      description: "12 years in graphic design & print production",
       color: "from-purple-500 to-pink-500",
       link: "/about"
     },
