@@ -1,12 +1,12 @@
 import React from 'react';
-import { Zap, Users, Award, Target, Layers, Sparkles, Palette, Code2 } from 'lucide-react';
+import { Zap, Users, Handshake, Award, Target, Layers, Sparkles, Palette, Code2 } from 'lucide-react';
 
 const About = () => {
   const highlights = [
     {
       icon: Code2,
-      title: "Frontend Engineering",
-      description: "6 years building scalable React applications with TypeScript, serving millions of users",
+      title: "Software Engineering",
+      description: "6 years building scalable enterprise applications, serving tens of thousands of users",
       color: "from-blue-400 to-cyan-500"
     },
     {
@@ -26,6 +26,20 @@ const About = () => {
       title: "Performance Focus",
       description: "Optimize applications for 95+ Lighthouse scores while maintaining design fidelity",
       color: "from-yellow-400 to-orange-500"
+    },
+    {
+      icon: Palette,
+      title: "Design Heritage",
+      description: "12 years in print production & graphic design",
+      color: "from-purple-500 to-pink-500",
+      link: "/about"
+    },
+    {
+      icon: Handshake,
+      title: "Cross-Functional Collaboration",
+      description: "Bridging business needs and development seamlessly",
+      color: "from-emerald-500 to-teal-500",
+      link: "/skills"
     }
   ];
 
@@ -82,7 +96,7 @@ const About = () => {
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
                 I bring a unique perspective to frontend engineering, combining 
                 <span className="font-semibold text-indigo-600"> 6 years of software development</span> with 
-                <span className="font-semibold text-purple-600"> 12 years of graphic design expertise</span> 
+                <span className="font-semibold text-purple-600"> 12 years of graphic design expertise </span> 
                 from magazine print production.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">

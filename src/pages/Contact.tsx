@@ -14,6 +14,7 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitted(true);
+    console.log('Form Data:', formData);
     setTimeout(() => setIsSubmitted(false), 3000);
     setFormData({ name: '', email: '', company: '', subject: '', message: '' });
   };
@@ -26,10 +27,11 @@ const Contact = () => {
   };
 
   const contactReasons = [
+    "Fullstack Development Role",
     "Frontend Development Role",
     "Freelance/Contract Work", 
     "Technical Consultation",
-    "Speaking Opportunity",
+    // "Speaking Opportunity",
     "Collaboration Proposal",
     "Other"
   ];
@@ -46,7 +48,7 @@ const Contact = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             I'm always excited to discuss new opportunities, collaborate on interesting projects, 
-            or chat about the latest in frontend development.
+            or chat about the latest technology trends.
           </p>
         </div>
         
@@ -63,7 +65,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900 text-lg">Email</p>
-                    <p className="text-gray-600">alex.chen@email.com</p>
+                    <p className="text-gray-600">jonathan.ciccarella@gmail.com</p>
                   </div>
                 </div>
                 
@@ -73,7 +75,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900 text-lg">Phone</p>
-                    <p className="text-gray-600">+1 (555) 987-6543</p>
+                    <p className="text-gray-600">+1 (917) 539-0816</p>
                   </div>
                 </div>
                 
@@ -83,7 +85,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900 text-lg">Location</p>
-                    <p className="text-gray-600">Seattle, WA</p>
+                    <p className="text-gray-600">Hoboken, NJ</p>
                   </div>
                 </div>
               </div>
@@ -96,24 +98,24 @@ const Contact = () => {
               </h3>
               <p className="mb-6 text-indigo-100 leading-relaxed">
                 I'm currently open to new opportunities and always interested in discussing 
-                innovative frontend projects, technical challenges, and potential collaborations.
+                innovative projects, technical challenges, and potential collaborations.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-cyan-400" />
-                  <span>Available for full-time roles</span>
+                  <span>Available for full-time & contract roles</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-cyan-400" />
                   <span>Open to consulting projects</span>
                 </div>
-                <div className="flex items-center space-x-3">
+                {/* <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-cyan-400" />
                   <span>Speaking & mentoring opportunities</span>
-                </div>
+                </div> */}
                 <div className="flex items-center space-x-3">
                   <Calendar className="w-5 h-5 text-cyan-400" />
-                  <span>Quick response within 24 hours</span>
+                  <span>Quick response within 24-36 hours</span>
                 </div>
               </div>
             </div>

@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react'; 
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Code2, AtSign, GraduationCap, Layers, Puzzle, FolderKanban, Sparkles } from 'lucide-react';
-
+import { Menu, X, AtSign, GraduationCap, Puzzle, Sparkles } from 'lucide-react';
+// Code2, Layers,  FolderKanban,
 interface LayoutProps {
   children: React.ReactNode;
 }
@@ -14,9 +14,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   const navigation = [
     { name: 'Home', href: '/', icon: Sparkles },
     { name: 'About', href: '/about', icon: Puzzle },
-    { name: 'Experience', href: '/experience', icon: Code2 },
-    { name: 'Current Projects', href: '/current-projects', icon: FolderKanban },
-    { name: 'Skills', href: '/skills', icon: Layers },
+    // { name: 'Experience', href: '/experience', icon: Code2 },
+    // { name: 'Current Projects', href: '/current-projects', icon: FolderKanban },
+    // { name: 'Skills', href: '/skills', icon: Layers },
     { name: 'Education', href: '/education', icon: GraduationCap },
     { name: 'Contact', href: '/contact', icon: AtSign },
   ];
@@ -131,7 +131,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">AC</span>
+                  <span className="text-white font-bold text-lg">JC</span>
                 </div>
                 <div>
                   <div className="text-xl font-bold">Jonathan Ciccarella</div>
@@ -164,7 +164,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div>
               <h3 className="text-lg font-semibold mb-4 text-white">Get In Touch</h3>
               <div className="space-y-3 text-gray-300">
-                <div>JonCiccarella@email.com</div>
+                <div>Jonathan.Ciccarella@gmail.com</div>
                 <div>+1 (917) 539-0816</div>
                 <div>Hoboken, NJ</div>
                 <div className="pt-4">

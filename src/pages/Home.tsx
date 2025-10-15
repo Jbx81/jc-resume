@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Code2, Palette, Handshake, Puzzle, Layers, Sparkles, Zap, Star, ChevronDown } from 'lucide-react';
+import { ArrowRight, Code2, Palette, Handshake, Puzzle, Layers, Sparkles, Zap, Star, ChevronDown, AtSign } from 'lucide-react';
 
 import { personalDescription } from '../constants/personal';
 
@@ -179,7 +179,7 @@ const Home = () => {
               to="/contact"
               className="group flex items-center space-x-3 bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300"
             >
-              <Sparkles className="w-6 h-6" />
+              <AtSign className="w-6 h-6" />
               <span>Get In Touch</span>
             </Link>
           </div>

@@ -1,33 +1,47 @@
 import React from 'react';
-import { Zap, Users, Award, Target, Layers, Sparkles, Palette, Code2 } from 'lucide-react';
+import { Zap, Users, Handshake, Award, Target, Layers, Sparkles, Palette, Code2 } from 'lucide-react';
 
 const About = () => {
   const highlights = [
-    {
-      icon: Code2,
-      title: "Frontend Engineering",
-      description: "6 years building scalable React applications with TypeScript, serving millions of users",
-      color: "from-blue-400 to-cyan-500"
-    },
-    {
-      icon: Palette,
-      title: "Design Background",
-      description: "12 years in graphic design and magazine production, bringing visual expertise to development",
-      color: "from-purple-400 to-pink-500"
-    },
-    {
-      icon: Layers,
-      title: "Design Systems",
-      description: "Architect component libraries that bridge design and development teams seamlessly",
-      color: "from-emerald-400 to-teal-500"
-    },
-    {
-      icon: Zap,
-      title: "Performance Focus",
-      description: "Optimize applications for 95+ Lighthouse scores while maintaining design fidelity",
-      color: "from-yellow-400 to-orange-500"
-    }
-  ];
+      {
+        icon: Code2,
+        title: "Software Engineering",
+        description: "6 years building scalable enterprise applications, serving tens of thousands of users",
+        color: "from-blue-400 to-cyan-500"
+      },
+      {
+        icon: Palette,
+        title: "Design Background",
+        description: "12 years in graphic design and magazine production, bringing visual expertise to development",
+        color: "from-purple-400 to-pink-500"
+      },
+      {
+        icon: Layers,
+        title: "Design Systems",
+        description: "Architect component libraries that bridge design and development teams seamlessly",
+        color: "from-emerald-400 to-teal-500"
+      },
+      {
+        icon: Zap,
+        title: "Performance Focus",
+        description: "Optimize applications for 95+ Lighthouse scores while maintaining design fidelity",
+        color: "from-yellow-400 to-orange-500"
+      },
+      {
+        icon: Palette,
+        title: "Design Heritage",
+        description: "12 years in print production & graphic design",
+        color: "from-purple-500 to-pink-500",
+        link: "/about"
+      },
+      {
+        icon: Handshake,
+        title: "Cross-Functional Collaboration",
+        description: "Bridging business needs and development seamlessly",
+        color: "from-emerald-500 to-teal-500",
+        link: "/skills"
+      }
+    ];
 
   return (
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
@@ -83,7 +97,7 @@ const About = () => {
                 I bring a unique perspective to frontend engineering, combining 
                 <span className="font-semibold text-indigo-600"> 6 years of software development</span> with 
                 <span className="font-semibold text-purple-600"> 12 years of graphic design expertise</span> 
-                from magazine print production.
+                 from magazine print production.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
                 My design background gives me an intuitive understanding of typography, layout, color theory, 

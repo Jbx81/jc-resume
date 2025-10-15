@@ -26,57 +26,81 @@ const Education = () => {
   ];
 
   const certifications = [
+    // {
+    //   name: "React Advanced Patterns",
+    //   issuer: "Epic React by Kent C. Dodds",
+    //   year: "2023",
+    //   icon: Award,
+    //   color: "from-blue-500 to-cyan-500"
+    // },
+    // {
+    //   name: "Design Systems with React",
+    //   issuer: "Frontend Masters",
+    //   year: "2023", 
+    //   icon: Award,
+    //   color: "from-purple-500 to-pink-500"
+    // },
+    // {
+    //   name: "Web Performance Optimization",
+    //   issuer: "Google Developers",
+    //   year: "2022",
+    //   icon: Award,
+    //   color: "from-green-500 to-emerald-500"
+    // },
+    // {
+    //   name: "Accessibility Specialist",
+    //   issuer: "International Association of Accessibility Professionals",
+    //   year: "2022",
+    //   icon: Award,
+    //   color: "from-orange-500 to-red-500"
+    // },
+    // {
+    //   name: "TypeScript Advanced",
+    //   issuer: "Microsoft Learn",
+    //   year: "2021",
+    //   icon: Award,
+    //   color: "from-indigo-500 to-blue-500"
+    // },
+    // {
+    //   name: "Adobe Certified Expert",
+    //   issuer: "Adobe Systems",
+    //   year: "2010",
+    //   icon: Award,
+    //   color: "from-pink-500 to-rose-500"
+    // }
     {
-      name: "React Advanced Patterns",
-      issuer: "Epic React by Kent C. Dodds",
-      year: "2023",
-      icon: Award,
-      color: "from-blue-500 to-cyan-500"
-    },
-    {
-      name: "Design Systems with React",
-      issuer: "Frontend Masters",
-      year: "2023", 
-      icon: Award,
-      color: "from-purple-500 to-pink-500"
-    },
-    {
-      name: "Web Performance Optimization",
-      issuer: "Google Developers",
-      year: "2022",
-      icon: Award,
-      color: "from-green-500 to-emerald-500"
-    },
-    {
-      name: "Accessibility Specialist",
-      issuer: "International Association of Accessibility Professionals",
-      year: "2022",
-      icon: Award,
-      color: "from-orange-500 to-red-500"
-    },
-    {
-      name: "TypeScript Advanced",
-      issuer: "Microsoft Learn",
-      year: "2021",
+      name: "TypeScript Masterclass",
+      issuer: "Flavio Copes",
+      year: "in progress",
       icon: Award,
       color: "from-indigo-500 to-blue-500"
     },
     {
-      name: "Adobe Certified Expert",
-      issuer: "Adobe Systems",
-      year: "2010",
+      name: "AI Workshop",
+      issuer: "Flavio Copes",
+      year: "in progress",
+      icon: Award,
+      color: "from-pink-500 to-rose-500"
+    },
+    {
+      name: "Solutions Architect - Associate Workshop",
+      issuer: "Amazon Web Services (AWS)",
+      year: "2024",
       icon: Award,
       color: "from-pink-500 to-rose-500"
     }
   ];
 
   const continuousLearning = [
-    "Advanced React Patterns & Performance",
+    "Modern Design Patterns",
+    // "Advanced React Patterns & Performance",
+    "Modern Frontend Frameworks",
+    "Micro-Frontends & Modular Architecture",
     "Design System Architecture & Tokens",
     "Web Assembly & Modern Browser APIs", 
     "Accessibility & Inclusive Design",
-    "Frontend Testing Strategies",
-    "Design-to-Code Workflow Optimization"
+    // "Frontend Testing Strategies",
+    // "Design-to-Code Workflow Optimization"
   ];
 
   return (
