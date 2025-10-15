@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react'; 
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Code2, Palette, Brain, Sparkles } from 'lucide-react';
+import { Menu, X, Code2, AtSign, GraduationCap, Layers, Puzzle, FolderKanban, Sparkles } from 'lucide-react';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -13,12 +13,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   const navigation = [
     { name: 'Home', href: '/', icon: Sparkles },
-    { name: 'About', href: '/about', icon: Palette },
+    { name: 'About', href: '/about', icon: Puzzle },
     { name: 'Experience', href: '/experience', icon: Code2 },
-    { name: 'Current Projects', href: '/current-projects', icon: Brain },
-    { name: 'Skills', href: '/skills', icon: Code2 },
-    { name: 'Education', href: '/education', icon: Palette },
-    { name: 'Contact', href: '/contact', icon: Sparkles },
+    { name: 'Current Projects', href: '/current-projects', icon: FolderKanban },
+    { name: 'Skills', href: '/skills', icon: Layers },
+    { name: 'Education', href: '/education', icon: GraduationCap },
+    { name: 'Contact', href: '/contact', icon: AtSign },
   ];
 
   useEffect(() => {
@@ -47,7 +47,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <Link to="/" className="flex items-center space-x-3 group">
               <div className="relative">
                 <div className="w-12 h-12 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-white font-bold text-lg">AC</span>
+                  <span className="text-white font-bold text-lg">JC</span>
                 </div>
                 <div className="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full animate-pulse"></div>
               </div>
@@ -55,7 +55,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <div className="text-xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
                   Jonathan Ciccarella
                 </div>
-                <div className="text-sm text-gray-600 font-medium">Senior Software Engineer</div>
+                <div className="text-sm text-gray-600 font-medium">Software Engineer</div>
               </div>
             </Link>
 
@@ -135,7 +135,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 </div>
                 <div>
                   <div className="text-xl font-bold">Jonathan Ciccarella</div>
-                  <div className="text-gray-400">Senior Software Engineer</div>
+                  <div className="text-gray-400">Software Engineer</div>
                 </div>
               </div>
               <p className="text-gray-300 leading-relaxed">
