@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Code2, Palette, Layers, Sparkles, Zap, Star, ChevronDown } from 'lucide-react';
+import { ArrowRight, Code2, Palette, Handshake, Puzzle, Layers, Sparkles, Zap, Star, ChevronDown } from 'lucide-react';
 
 import { personalDescription } from '../constants/personal';
 
@@ -9,22 +9,22 @@ const Home = () => {
   const highlights = [
     {
       icon: Code2,
-      title: "Frontend Engineering",
-      description: "6 years building scalable React applications",
+      title: "Software Engineering",
+      description: "6 years building scalable applications",
       color: "from-blue-500 to-cyan-500",
       link: "/experience"
     },
     {
       icon: Palette,
       title: "Design Heritage",
-      description: "12 years in magazine production & graphic design",
+      description: "12 years in print production & graphic design",
       color: "from-purple-500 to-pink-500",
       link: "/about"
     },
     {
-      icon: Layers,
-      title: "Design Systems",
-      description: "Bridging design and development seamlessly",
+      icon: Handshake,
+      title: "Cross-Functional Collaboration",
+      description: "Bridging business needs and development seamlessly",
       color: "from-emerald-500 to-teal-500",
       link: "/skills"
     }
@@ -61,9 +61,9 @@ const Home = () => {
 
           {/* Subtitle */}
           <div className="text-2xl lg:text-4xl text-gray-200 mb-8 font-light">
-            <span className="block">Senior Software Engineer</span>
+            <span className="block">Software Engineer</span>
             <span className="block text-lg lg:text-xl text-gray-300 mt-2">
-              Where Design Excellence Meets Engineering Precision
+              Fullstack developer with an eye for design
             </span>
           </div>
 
@@ -86,7 +86,7 @@ const Home = () => {
               to="/about"
               className="group flex items-center space-x-3 bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300"
             >
-              <Palette className="w-6 h-6" />
+              <Puzzle className="w-6 h-6" />
               <span>About Me</span>
             </Link>
           </div>
