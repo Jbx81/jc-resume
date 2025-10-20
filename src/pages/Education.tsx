@@ -92,7 +92,7 @@ const Education = () => {
   ];
 
   const continuousLearning = [
-    "Modern Design Patterns",
+    "Modern Browser APIs & Capabilities",
     // "Advanced React Patterns & Performance",
     "Modern Frontend Frameworks",
     "Micro-Frontends & Modular Architecture",
